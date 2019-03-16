@@ -24,6 +24,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'bootstrap-sass'
+gem 'simple_form'
+gem 'redcarpet'
+gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -37,11 +40,16 @@ group :development, :test do
   gem 'web-console'
   gem 'byebug'
   gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'spring-commands-cucumber'
   gem 'rspec-rails'
-  gem 'factory_bot'
+  gem 'factory_bot_rails', '~>4.10.0'
 end
 
 group :test do
   gem 'capybara'
+  gem 'rails-controller-testing'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 
