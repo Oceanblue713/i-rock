@@ -51,5 +51,6 @@ group :test do
   gem 'rails-controller-testing'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
+  gem 'shoulda-matchers', require: false
 end
 
